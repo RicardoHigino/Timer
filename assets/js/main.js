@@ -19,8 +19,7 @@ function relogio(){
     }
 
     document.addEventListener('click', function(e) {
-        const el = e.target;//target aciona o que você clicar
-        // dessa forma não precisa nem selecionar chamar as variáveis pelo querySelector
+        const el = e.target;
         if(el.classList.contains('iniciar')) {
             clearInterval(timer);
             iniciaRelogio()
@@ -39,23 +38,5 @@ function relogio(){
             segundos = 0
         }
     })
-    
-    // iniciar.addEventListener('click', function(event) {
-        //     clearInterval(timer);
-        //     iniciaRelogio()
-        //     relogio.style.color = '#000'
-        // })
-        
-        // pausar.addEventListener('click', function(event) {
-            //     relogio.style.color = '#DC143C'
-            //     clearInterval(timer);
-            // })
-            
-            // zerar.addEventListener('click', function(event) {
-                //     clearInterval(timer);
-                //     relogio.style.color = '#000'
-                //     relogio.innerHTML = '00:00:00'
-                //     segundos = 0
-                // })
 }
 relogio()
