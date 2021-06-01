@@ -44,8 +44,18 @@ body {
 .relogio {
     font-size: 80px;
     color: #fff;
+    
 }
 
 .btn {
+    font-size: 1px;
+}
+.iniciar {
+    font-size: 20px;
+}
+.pausar {
+    font-size: 20px;
+}
+.zerar {
     font-size: 20px;
 }
