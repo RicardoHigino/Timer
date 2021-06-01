@@ -19,11 +19,12 @@ function relogio(){
     }
 
     document.addEventListener('click', function(e) {
-        const el = e.target;
+        const el = e.target;//target aciona o que você clicar
+        // dessa forma não precisa nem selecionar chamar as variáveis pelo querySelector
         if(el.classList.contains('iniciar')) {
             clearInterval(timer);
             iniciaRelogio()
-            relogio.style.color = '#000'
+            relogio.style.color = '#fff'
         }
 
         if(el.classList.contains('pausar')) {
@@ -33,10 +34,28 @@ function relogio(){
         
         if(el.classList.contains('zerar')) {
             clearInterval(timer);
-            relogio.style.color = '#000'
+            relogio.style.color = '#fff'
             relogio.innerHTML = '00:00:00'
             segundos = 0
         }
     })
+    
+    // iniciar.addEventListener('click', function(event) {
+        //     clearInterval(timer);
+        //     iniciaRelogio()
+        //     relogio.style.color = '#000'
+        // })
+        
+        // pausar.addEventListener('click', function(event) {
+            //     relogio.style.color = '#DC143C'
+            //     clearInterval(timer);
+            // })
+            
+            // zerar.addEventListener('click', function(event) {
+                //     clearInterval(timer);
+                //     relogio.style.color = '#000'
+                //     relogio.innerHTML = '00:00:00'
+                //     segundos = 0
+                // })
 }
 relogio()

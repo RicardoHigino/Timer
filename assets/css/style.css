@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
 
 :root {
-    --primary-color: rgb(17, 86, 102);
+    --primary-color: rgb(0, 0, 0);
     --primary-color-darker: rgb(9, 48, 56);
 }
 
@@ -11,58 +11,41 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background: var(--primary-color); 
+    background-image: url(https://i.pinimg.com/originals/fe/2a/e9/fe2ae9ecab6bf673a80a17dee19c46dc.jpg);
+    background-position: center;
+    background-size: aut;
     font-family: 'Playfair', sans-serif;
     font-size: 2em;
-    line-height: 0.5em;
+    line-height: 0px;
 }
 
 .container {
     display: flex;
     flex-direction:column;
-    align-items: left;
-    color: #000;
-    max-width: 640px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    max-width: 500px;
+    max-height: 500px;
     margin: 50px auto;
-    background: rgba(250, 247, 247, 0.87);
+    background-color: #000;
+    opacity: 85%;
     padding: 20px;
     border-radius: 10px;
-    font-size: 25px;
-}
-
-.relogio {
     font-size: 50px;
 }
 
-form input, fomr label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-form input {
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
-}
-
-form input:focus {
-    outline: 1px solid var(--primary-color);
-}
-
-form button {
-    border: none;
-    background: var(--primary-color);
+.relogio {
+    font-size: 80px;
     color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    height: 50px;
-    cursor: pointer;
-    margin-top: 30px;
 }
 
-form button:hover {
-    background: var(--primary-color-darker);
+.btn {
+    font-size: 20px;
 }
